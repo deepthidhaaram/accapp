@@ -15,8 +15,8 @@ else{
         echo '<table class="table">';
         echo '<thead>
             <tr>
-            <th>ID</th>
-            <th>NAME OF THE USER</th>
+            <th>Account ID</th>
+            <th></th>
             <th>USER NAME</th>
             <th>EMAIL ID</th>
             <th>PHONE </th>
