@@ -16,10 +16,14 @@ else{
     $sql= "INSERT INTO USERS(`FIRSTNAME`,`LASTNAME`,`USERNAME`,`EMAIL`,`PHONE`,`PASSWORD`) VALUES('".$firstname."','".$lastname."','".$username."','".$email."','".$phone."','".$password."')";
     //echo $sql;
     if($conn->query($sql)===TRUE){
-        echo "Successfully registered";
+        
+        header("Location:index.php?accountcreated=1");
+    
     }
     else{
         echo "Error" .$conn->connect_error;
     }
 }
 ?>
+
+select * from accapp.users;
