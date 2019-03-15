@@ -8,9 +8,6 @@
         <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css">   
 </head>
 <body>
-
-
-
 <div class="container">
     <div class="columns is-centered is-mobile">
         <div class="column is-mobile is-half">
