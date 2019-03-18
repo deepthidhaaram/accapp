@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/assets/css/bulma.css">
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
-<body>
+<body class="container">
 <!--header>
 <div class="row level">
 <div class="column is-3 level-item level-left">

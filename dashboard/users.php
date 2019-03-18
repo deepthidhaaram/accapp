@@ -20,6 +20,8 @@ else{
             <th>USER NAME</th>
             <th>EMAIL ID</th>
             <th>PHONE </th>
+            <th>Actions </th>
+            
             </tr>
         </thead><tbody>';
         while($user=mysqli_fetch_assoc($users)){
@@ -29,6 +31,10 @@ else{
             echo "<td>".$user['USERNAME']."</td>";
             echo "<td>".$user['EMAIL']."</td>";
             echo "<td>".$user['PHONE']."</td>";
+            echo '<td>
+                <a href="editdetails.php?id='.$user['USER_ID'].'" class="button is-info">Edit</a>
+                <a href="deleteuser.php?id='.$user['USER_ID'].'" class="button is-danger">Delete</a></td>';
+            
             echo "</tr>";
         }
         echo "<tbody>
