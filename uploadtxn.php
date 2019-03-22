@@ -13,7 +13,7 @@ if (file_exists($target_file)) {
     $uploadOk = 0;
 }
 // Check file size
-if ($_FILES["att_file"]["size"] > 500000) {
+if ($_FILES["att_file"]["size"] > 204800000) {
     return "SIZE EXCEEDED";
     $uploadOk = 0;
 }
@@ -55,8 +55,9 @@ else{
     }
     $txn_amt=$_POST['txn_amt'];
     $txn_date=$_POST['txn_date'];
+    $att_id=$conn->insert_id;
     $att_id=0;
-    $insertTxn="INSERT INTO TRANSACTIONS(TXN_AMT,TXN_DATE,ATTACHMENT_ID) VALUES (".$txn_amt.",'".$txn_date."',".$att_id.")";
+    $insertTxn="INSERT INTO TRANSACTIONS(TXN_AMT,TXN_DATE,ATTACHMENT_ID) VALUES (".$txn_amt.",'".$txn_date."',".$att_id.."','".$att_id."')";
     echo $insertTxn;
     if($conn->query($insertTxn)===TRUE){
         echo  "Added transaction Successfully!";
