@@ -1,16 +1,8 @@
 <?php include "layout/header.php";?>
 <?php
-
-include "../includes/config.php";
-//$conn = mysqli_connect($servername, $dbuser, $dbpwd, $dbname);
-$conn = new mysqli($servername,$dbuser,$dbpwd,$dbname);
-if($conn->connect_error){
-    die("Connection Error".$conn->connect_error);
-}
-else{
-    
-    $getUsers="select * from users"; 
-    $users=$conn->query($getUsers);
+    include "../library/user.php";
+    $users=getallusers();
+  
     if($users->num_rows>0){
         echo '<table class="table">';
         echo '<thead>
@@ -56,7 +48,7 @@ else{
 
 
 
-}
+
 ?>
 
 
