@@ -1,6 +1,6 @@
 <?php
 $servername="localhost";
 $dbuser="accapp";
-$dbpwd="giridher";
+$dbpwd="skillverse987";
 $dbname="accapp";
 ?>
