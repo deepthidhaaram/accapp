@@ -1,2 +1,0 @@
-# accapp
-Accounting App
